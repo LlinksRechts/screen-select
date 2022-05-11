@@ -14,7 +14,7 @@ from keyutil import get_posmap, initkeys
 from pointer import pointer_position
 
 n_monitors = Gdk.Display.get_default().get_n_monitors()
-keys = ["h", "j", "k", "l"][1 - n_monitors // 4 : n_monitors // 3 - 1]
+keys = ["h", "j", "k", "l"][1 - n_monitors // 4 : 3 + n_monitors // 3]
 
 
 def global_inital_states():
